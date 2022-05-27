@@ -47,7 +47,7 @@ function Banner() {
             </h1>
         </div>
 
-        <div className='banner-fadeButton' />
+         
         
     </div>
   )
