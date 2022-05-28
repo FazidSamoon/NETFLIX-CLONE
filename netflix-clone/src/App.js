@@ -1,7 +1,7 @@
 import React, { useEffect , useState} from 'react';
 import './App.css';
 import HomeScreen from './component/HomeScreen';
-import { Routes, Route, useParams, BrowserRouter as Router } from "react-router-dom";
+import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 import LoginScreen from './screens/LoginScreen';
 import { useDispatch, useSelector } from "react-redux";
 import { login, logout, selectUser } from "./features/userSlice";
@@ -11,6 +11,7 @@ function App() {
 
   // const user = useSelector(selectUser);
   const [user, setUser] = useState(null);
+  console.log("ss"+user);
 
 
   const dispatch = useDispatch()

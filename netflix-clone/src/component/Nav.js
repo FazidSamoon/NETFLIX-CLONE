@@ -14,7 +14,6 @@ function Nav() {
       }
   }
 
-  //trigger transition navbar on scroll
   useEffect(() => {
       window.addEventListener("scroll" , transitionNavBar);
 
@@ -29,7 +28,7 @@ function Nav() {
         <div className='navbar-content'>
             <img 
             className='navbar-logo'
-            src='http://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png'  
+            src='netflixlogo.png'  
             />
 
             <img 

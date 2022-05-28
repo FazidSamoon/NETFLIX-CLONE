@@ -1,15 +1,10 @@
 import React, { useRef } from 'react'
-import { auth , useAuth } from '../firebase';
 import "../styles/signIn.css"
 import { signin , signup } from '../firebase';
 
 function SignInScreen() {
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
-
-
-  const currentUser = useAuth()
-  console.log(currentUser)
 
   const register = (e) =>{
     e.preventDefault();
